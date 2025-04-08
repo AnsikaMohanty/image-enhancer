@@ -15,8 +15,8 @@ const App = () => {
 
       <Home />
 
-      <div className='text-sm text-cyan-200 mt-6'>
-        Made with ❤️ by Team GraphiQue
+      <div className='text-sm text-cyan-200 mt-12'>
+      © 2025 GraphiQue, Inc. All rights reserved.
       </div>
        
     </div>
