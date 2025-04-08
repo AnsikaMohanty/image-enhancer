@@ -5,7 +5,7 @@ const ImagePreview = (props) => {
   return (
     <div className='mt-8 grid grid-cols-1 md:grid-cols-2 gap-2 max-w-6xl'>  
       {/* Original Image */}
-      <div className='bg-white shadow-lg overflow-hidden rounded-xl w-full aspect-square'>
+      <div className='bg-white shadow-lg overflow-hidden w-full aspect-square'>
         <h2 className='text-base text-center font-semibold text-white bg-gray-800 py-2 px-2'>
           Original Image
         </h2>
@@ -23,8 +23,8 @@ const ImagePreview = (props) => {
       </div>
 
       {/* Enhanced Image */}
-      <div className='bg-white shadow-lg overflow-hidden rounded-xl w-full aspect-square'>
-        <h2 className='text-base text-center font-semibold text-white bg-blue-800 py-2 px-2'>
+      <div className='bg-white shadow-lg overflow-hidden w-full aspect-square'>
+        <h2 className='text-base text-center font-semibold text-amber-400 bg-blue-800 py-2 px-2'>
           Enhanced Image
         </h2>
         <div className='h-full flex items-center justify-center'>
