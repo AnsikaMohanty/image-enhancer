@@ -56,12 +56,12 @@ const fetchEnhancedImage = async (taskId) => {
 const PollForEnhancedImage = async (taskId, retries = 0) => {
     const result = await fetchEnhancedImage(taskId);
     
-    // Successful completion state (adjust if your API uses different state codes)
-    if (result.state === 3) {
-        if (!result.url) { // Make sure the URL exists
+    // Successful completion state
+    if (result.state === 1 && result.state_detail === "Complete") {
+        if (!result.image) { // Check for image property, not url
             throw new Error("Enhanced image URL not found in response");
         }
-        return result.url; // Return just the URL
+        return result.image; // Return the image URL, not url
     }
     
     // Processing state - keep polling
