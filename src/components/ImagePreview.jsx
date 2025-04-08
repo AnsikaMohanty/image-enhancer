@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ImagePreview = (props) => {
+    console.log(props)
   return (
     <div className='mt-8 grid grid-cols-1 md:grid-cols-2 gap-2 max-w-6xl'>  
       {/* Original Image */}
